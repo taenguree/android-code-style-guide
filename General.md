@@ -56,7 +56,10 @@
 
 ``` kotlin
 😰 
-if(condition) Log.d(TAG, "bad!") else Log.d(TAG, "also bad!")
+if(condition) 
+  Log.d(TAG, "bad!") 
+ else 
+  Log.d(TAG, "also bad!")
 
 😍 
 if(condition) {
