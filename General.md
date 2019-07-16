@@ -28,7 +28,7 @@
   - 불가피하게 매직상수를 사용하게 되어 그 상수의 의미를 전달할 필요가 있을 때.
   - 코드만으로는 설명할 수 없는 History 가 있을 경우.  (ex: 이 코드는 ~이슈 때문에 이렇게 짰고 ~해서 작동한다)
   - 일반적이지않은 데이터 처리의 경우. (ex: 이 데이터는 ~하게 오기 때문에 ~해서 처리해야한다)
-    - onMeaure의 parameter들은 여러 정보가 담겨오는 Int 이기 때문에 View.MesureSpec 로 unpack 해서 사용해야한다.
+    - 예) onMeaure의 parameter들은 여러 정보가 bitwise 돼 담겨오기 때문에 View.MesureSpec 로 unpack 해서 사용해야한다.
 
 ``` kotlin
 😰 // Bad Comment 
