@@ -43,3 +43,26 @@
 
 😍 private val goodFloat = 1F
 ```
+
+### ✓ 10만 이상의 Numeric literal 을 표현할 때는 underscore 를 사용한다.
+
+``` kotlin
+😰 private val badNumber = 111111
+
+😍 private val goodNumber = 1_111_111
+```
+
+### ✓ Brace 를 최대한 사용한다.
+
+``` kotlin
+😰 
+if(condition) Log.d(TAG, "bad!") else Log.d(TAG, "also bad!")
+
+😍 
+if(condition) {
+  Log.d(TAG, "GOOD!") }
+else {
+  Log.d(TAG, "also GOOD!")
+}
+```
+
