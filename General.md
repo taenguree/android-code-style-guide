@@ -58,7 +58,7 @@
 😰 
 if(condition) 
   Log.d(TAG, "bad!") 
- else 
+else 
   Log.d(TAG, "also bad!")
 
 😍 
