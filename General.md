@@ -2,7 +2,7 @@
 
 ## [ Basic rules ]
 
-### 👉 CamelCase base
+### ✓ CamelCase base
 
 - 기본적으로 Camel case 를 사용한다.
 - 하지만 아래와 같은 예외는 있다.
@@ -19,9 +19,9 @@
     fun tearDown() { ... }
     ```
 
-### 👉 static / const 필드는 전부 대문자로 작성하며 snake case 를 사용한다.
+### ✓ static / const 필드는 전부 대문자로 작성하며 snake case 를 사용한다.
 
-### 👉 불필요한 코멘트는 피한다.
+### ✓ 불필요한 코멘트는 피한다.
  
 - 아래와 같은 경우에만 코멘트를 작성하며 코멘트는 ``` // ``` 가 아닌 ``` /** ... */ ``` 를 사용한다.
   - 코드가 하는 작업이 변수명이나 메소드명만으로는 그 의미를 전달하기 매우 힘들 경우.
@@ -36,7 +36,7 @@
 😍 /** Good Comment */
 ```
 
-### 👉 Numeric literal 의 suffix 는 대문자를 사용한다.
+### ✓ Numeric literal 의 suffix 는 대문자를 사용한다.
 
 ``` kotlin
 😰 private val badFloat = 1f
