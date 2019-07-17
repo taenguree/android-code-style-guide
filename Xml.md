@@ -97,7 +97,7 @@
 
     😰
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/good"
+        android:id="@+id/bad"
         android:layout_width="500dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
