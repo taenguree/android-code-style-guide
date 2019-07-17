@@ -251,7 +251,8 @@ good_lamda.setOnClickListener { doSomething() }
 fun badAnnotating(): String { ... }
 
 😍
-@Provides @PerActivity
+@Provides 
+@PerActivity
 fun goodAnnotating(): String { ... }
 ```
 
