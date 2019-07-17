@@ -232,18 +232,25 @@ goodBuilder
   .build()
 ```
 
-### ✓ 변수는 그 변수가 어떤 의미를 가지는지 모두 포함할 수 있도록 길게 짓는다.
+### ✓ 변수는 그 변수가 어떤 의미를 갖는 알 수 있도록 충분히 길게 짓는다. 
 
-- flag 라는 이름의 변수명 절대 사용하지 않는다.
+- 변수의 의미전달 때문에 너무 길어질 경우는 적당한 선에서 작성한다. 0~30 자 내외
+- flag 라는 이름의 변수명은 절대 사용하지 않는다.
 
 ``` kotlin
 😰 
 private val index = 0 /** bad naming */
 
-private val flag = false  /** bad naming */
+private val isCorrect = false /** bad naming */
+
+private val isLoginDataAndNewUpdateCheckDataAndNextDataFetched = false /** bad naming */
+
+private val flag = false /** bad naming */
 
 😍
-private val mainProblemIndex = 0  /** good naming */
+private val mainProblemIndex = 0 /** good naming */
 
-private val isMainProblemCorrect = false  /** good naming */
+private val isMainProblemCorrect = false /** good naming */
+
+private val isAllDatasFetched = false /** good naming */
 ```
