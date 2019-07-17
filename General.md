@@ -9,7 +9,7 @@
 - 클래스의 경우 기본적으로 internal 을 붙여 선언한다.
 - 위처럼 할 경우 자신이 짠 코드의 변수에 private 가 없으면 다른 개발자가 자신의 코드를 볼 때 해당 변수는 다른 곳에서 참조되고 있다는 것을 자연스럽게 알 수 있게 된다.
 
-  - 코틀린에서 기본 클래스가 상속이 안되고 상속이 되게하려면 open 을 붙이도록하는 것은 [🌟](https://github.com/taenguree/android-code-style-guide/blob/master/General.md#%EB%AD%90%EB%93%A0%EC%A7%80-%EC%9A%B0%EC%84%A0-%EC%95%88%EB%90%98%EA%B2%8C-%ED%95%98%EA%B3%A0-%EB%82%98%EC%A4%91%EC%97%90-%ED%95%84%EC%9A%94%ED%95%A0-%EB%95%8C-%EB%90%98%EA%B2%8C%ED%95%98%EB%9D%BC-) 의 철학과 비슷하다.
+  - 코틀린에서 기본 클래스가 상속이 안되고 상속이 되게하려면 open 을 붙이도록하는 것은 위 🌟 표시의 철학과 비슷하다.
 
 ``` kotlin
 😰 
