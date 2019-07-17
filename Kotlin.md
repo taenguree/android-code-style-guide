@@ -199,6 +199,7 @@ private fun goodEmptyFunction() = Unit
 - kotlin 은 class 앞에 data keyword 를 붙여 data class 로써 편의함수(equal, hash, copy)등을 자동포함하도록 하는 기능이 있다.
 - 하지만 이를 사용하지 않는다.
 - 그 이유에 대해서는 이곳에 서술하기엔 길어지므로 lead programmer 에게 문의
+  - 간단하게 설명하자만 [기본적으로 안되게 하는 철학](https://github.com/taenguree/android-code-style-guide/blob/master/General.md#%EB%AD%90%EB%93%A0%EC%A7%80-%EC%9A%B0%EC%84%A0-%EC%95%88%EB%90%98%EA%B2%8C-%ED%95%98%EA%B3%A0-%EB%82%98%EC%A4%91%EC%97%90-%ED%95%84%EC%9A%94%ED%95%A0-%EB%95%8C-%EB%90%98%EA%B2%8C%ED%95%98%EB%9D%BC-)에 위배되기 때문이다.
 
 ### ✓ 변수명만으로 타입의 의미를 표현하기 힘든 경우 typealias 를 적극적으로 사용한다.
 
