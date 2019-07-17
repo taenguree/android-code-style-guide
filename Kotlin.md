@@ -197,3 +197,17 @@ fun goodEmptyFunction() = Unit
 - 하지만 이를 사용하지 않는다.
 - 그 이유에 대해서는 이곳에 서술하기엔 길어지므로 lead programmer 에게 문의
 
+### ✓ 변수명만으로 타입의 의미를 표현하기 힘든 경우 typealias 를 적극적으로 사용한다.
+
+``` kotlin
+😰
+val badVariable = hashMapOf<Int, String>()
+
+😍
+typealias PictureIndex = Int
+typealias PictureUrl   = String
+
+val goodVariable = hashMapOf<PictureIndex, PictureUrl>()
+```
+
+
