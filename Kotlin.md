@@ -32,14 +32,19 @@ import i.will.get.audi.r8.eventually
 typealias MyCustomInt = Int
 
 internal abstract class MyCustomLayout(
-  private val context: Context,
-  private val attrs: AttributeSet? = null
+    private val context: Context,
+    private val attrs: AttributeSet? = null
 
 ) : FrameLayout(context, attrs) {
 
   constructor(context: Context, attrs: AttributeSet? = null, extra: Int) : this(context, attrs, extra)
   
-  constructor(context: Context, attrs: AttributeSet? = null, extra: Int, extra1: Int) : this(context, attrs, extra)
+  constructor(
+      context: Context, 
+      attrs: AttributeSet? = null, 
+      extra: Int, 
+      extra1: Int
+  ) : this(context, attrs, extra)
   
   companion object {
     private const val MAX_LAYOUT_WIDTH  = 100F
