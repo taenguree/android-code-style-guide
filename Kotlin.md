@@ -194,6 +194,19 @@ private fun badEmptyFunction() {
 private fun goodEmptyFunction() = Unit
 ```
 
+### ✓ 빈 클래스의 경우 Brace 를 생략한다.
+
+``` kotlin
+😰
+internal class BadEmptyclass {
+}
+
+internal class AlsoBadEmptyclass {}
+
+😍
+internal class GoodEmptyclass
+```
+
 ### ✓ data class 를 사용하지 않는다.
 
 - kotlin 은 class 앞에 data keyword 를 붙여 data class 로써 편의함수(equal, hash, copy)등을 자동포함하도록 하는 기능이 있다.
