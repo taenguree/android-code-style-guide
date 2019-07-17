@@ -85,7 +85,7 @@
 </androidx.drawerlayout.widget.DrawerLayout>
 ```
 
-- 자식이 없는 뷰 요소는 /> 으로 바로 닫는다.
+- 자식이 없는 뷰 요소는 ```/>``` 으로 바로 닫는다.
 
 ``` xml
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
