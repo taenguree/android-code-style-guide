@@ -201,7 +201,7 @@ fun badAnnotating(): String { ... }
 fun goodAnnotating(): String { ... }
 ```
 
-### ✓ 필드 어노테이션 너무 길어지지 않는 이상 기본적으로 가로로 작성한다.
+### ✓ 필드 어노테이션은 너무 길어지지 않는 이상 기본적으로 가로로 작성한다.
 
 ``` kotlin
 😰 
