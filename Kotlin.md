@@ -256,14 +256,14 @@ if(someVariable != null) { /** recommended */
 
 ``` kotlin
 😰
-internal class NotRecommendedUserClass(
+internal class NotRecommendedUserClass constructor(
     private val id: String       = "",
     private val password: String = "",
             var type: UserType   = UserType.New()
 )
 
 😍
-internal class RecommendedUserClass(
+internal class RecommendedUserClass constructor(
     private val id: String,
     private val password: String
     
