@@ -423,26 +423,26 @@ internal sealed class GoodSealedClass { /** sealed class 이므로 시작과 끝
 ``` kotlin
 😰
 private fun badFunction() {
-
+                                        /** 불필요한 공백라인 !*/
   doSomething()
-
+                                        /** 불필요한 공백라인 !*/
 }
 
 private fun alsoBadFunction() {
-
+                                        /** 불필요한 공백라인 !*/
   doSomething()
 }
 
 private fun alsoAlsoBadFunction() {
   doSomething()
-  
+                                        /** 불필요한 공백라인 !*/
 }
 
 bad_lamda.setOnClickListener {
-
+                                        /** 불필요한 공백라인 !*/
   doSomething()
   doNextThing()
-  
+                                        /** 불필요한 공백라인 !*/
 }
 
 😍
