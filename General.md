@@ -340,7 +340,7 @@ internal interface GoodInterface { /** interface 이므로 시작과 끝에 공�
   fun doSomething()
 }
 
-internal seald class GoodSealedClass { /** sealed class 이므로 시작과 끝에 공백라인이 없음 */
+internal sealed class GoodSealedClass { /** sealed class 이므로 시작과 끝에 공백라인이 없음 */
   class Class1( /** nested class 이므로 시작과 끝에 공백라인이 없음 */
     val variable: Int,
     val variable1: Int,
