@@ -9,8 +9,8 @@
 | 액티비티 | activity_{name} |
 | 프래그먼트 | fragment_{name} |
 | 다이얼로그 프래그먼트 | dialog_fragment_{name} |
-| 커스텀 View | view_{name} |
-| ViewHolder | view_holder_{name} |
+| 커스텀 뷰 | view_{name} |
+| 뷰 홀더 | view_holder_{name} |
 | include 되는 xml | include_layout_{name} |
 
 ### ✓ xml 뷰 요소들의 id 는 아래와 같은 네이밍 룰을 따른다.
