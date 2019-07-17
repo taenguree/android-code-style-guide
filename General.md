@@ -401,7 +401,7 @@ private fun goodFunction() {
   doNextThing()
 }
 
-good_labda.setOnClickListener {
+good_lamda.setOnClickListener {
   doSomething()
   doNextThing()
 }
