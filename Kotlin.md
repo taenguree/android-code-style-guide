@@ -12,8 +12,8 @@
 - companion object definition
 - interface(callback) definition
 - nested/inner class definition(if exist)
-- concrete members(if exist)
 - abstract methods(if exist)
+- concrete members(if exist)
 - init definition(if required)
 - lifecycle related methods with basic order(if required)
 - concreate method
@@ -63,13 +63,16 @@ internal abstract class MyCustomLayout(
     class Lock : Entry() 
   }
   
-  init {
-    initializeViews()
-  }
+  abtract fun hasRootView(): Boolean
+  abtract fun getRootView(): View
   
   private lateinit var viewState: ViewState
   
   private var listener: Listener? = null
+  
+  init {
+    initializeViews()
+  }
   
   override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
     ...
