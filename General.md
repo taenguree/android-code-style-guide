@@ -254,3 +254,34 @@ private val isMainProblemCorrect = false /** good naming */
 
 private val isAllDatasFetched = false /** good naming */
 ```
+
+### ✓ 매직{넘버|스트링|...}(은)는 사용하지 않는다. 상수로 의미를 정의해서 쓴다.
+
+``` kotlin
+😰 
+if(currentProblemNumber == 10) { /** bad magic number */
+  completeLesson()
+  navigateToResult()
+}
+
+if(problemType == "N") { /** bad magic string */
+  hideHintTip()
+}
+
+😍
+companion object {
+  private val MAX_PROBLEM_NUMBER = 10
+  
+  private val NORMAL_PROBLEM_TYPE_PROVIDED_BY_SERVER = "N"
+}
+
+if(currentProblemNumber == DEFAULT_PROBLEM_NUMBER) { /** good */
+  completeLesson()
+  navigateToResult()
+}
+
+if(problemType == NORMAL_PROBLEM_TYPE_PROVIDED_BY_SERVER) { /** good */
+  hideHintTip()
+}
+```
+
