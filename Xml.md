@@ -60,7 +60,7 @@
         android:layout_gravity="start"
         android:padding="5dp"
         android:background="#ffffff"
-        android:orientation="vertical"> <!-- 아래 EditText 와 공백이 없어야 한다. -->
+        android:orientation="vertical"> <!-- 이처럼 아래 EditText 와 공백이 없어야 한다. -->
         <EditText
             android:id="@+id/sinod_json_edit_text"
             android:layout_width="match_parent"
@@ -80,7 +80,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout> <!-- 위 버튼과 공백이 없어야 한다. -->
+    </androidx.constraintlayout.widget.ConstraintLayout> <!-- 이처럼 위 버튼과 공백이 없어야 한다. -->
 
 </androidx.drawerlayout.widget.DrawerLayout>
 ```
