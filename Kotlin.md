@@ -114,6 +114,22 @@ internal abstract class MyCustomLayout(
 
 ## [Basic rules]
 
+### ✓ enum 은 대문자로 시작해 camel case 를 사용합니다.
+
+``` kotlin
+😰
+enum BadEnum {
+  BAD_ENUM,
+  alsoBadEnum
+}
+
+😍
+enum GoodEnum {
+  GoodEnum,
+  AlsoGoodEnum
+}
+```
+
 ### ✓ : 은 아래의 룰에 따릅니다.
 
 - 리턴 값을 의미할 경우 suffix space 를 넣지 않습니다.
@@ -134,3 +150,34 @@ fun good(): String {
 
 class Good constructor(context: Context) : FrameLayout(context)
 ```
+
+### 생성자는 아래와 같이 작성합니다.
+
+``` kotlin
+😰
+internal class BadClass contructor(
+    private val context: Context,
+    private val resources: Resource
+) : FrameLayout(context) { /** 윗 라인에 공백라인을 추가해야합니다. */
+
+  private val variable: Int = 0
+
+  ...
+  
+}
+
+😍
+
+internal class GoodClass contructor(
+    private val context: Context,
+    private val resources: Resource
+    
+) : FrameLayout(context) {
+
+  private val variable: Int = 0
+  
+  ...
+  
+}
+```
+
