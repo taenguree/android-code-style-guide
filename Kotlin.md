@@ -26,8 +26,7 @@
 😍
 package code.style.guide
 
-import i.want.to.get.audi.r8
-import but.it.is.very.expensive
+import i.will.get.audi.r8.eventually
 
 
 typealias MyCustomInt = Int
