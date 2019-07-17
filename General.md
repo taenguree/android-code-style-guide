@@ -103,3 +103,27 @@ val goodOperatorStyle = Observable.just(1, 2, 3)
   
 good_lamda.setOnClickListener { doSomething() }
 ```
+
+### ✓ 메소드 어노테이션은 세로로 작성한다.
+
+``` kotlin
+😰 
+@Provides @PerActivity
+fun badAnnotating(): String { ... }
+
+😍
+@Provides @PerActivity
+fun goodAnnotating(): String { ... }
+```
+
+### ✓ 필드 어노테이션 너무 길어지지 않는 이상 기본적으로 가로로 작성한다.
+
+``` kotlin
+😰 
+@Inject 
+@field:Bad
+lateinit var badAnnotating: String
+
+😍
+@Inject @field:Good lateinit var goodAnnotating: String
+```
