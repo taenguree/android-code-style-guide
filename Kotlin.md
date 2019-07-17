@@ -184,11 +184,11 @@ internal class GoodClass contructor(
 
 ``` kotlin
 😰
-fun badEmptyFunction() {
+private fun badEmptyFunction() {
 }
 
 😍
-fun goodEmptyFunction() = Unit
+private fun goodEmptyFunction() = Unit
 ```
 
 ### ✓ data class 를 사용하지 않는다.
@@ -201,13 +201,13 @@ fun goodEmptyFunction() = Unit
 
 ``` kotlin
 😰
-val badVariable = hashMapOf<Int, String>()
+private val badVariable = hashMapOf<Int, String>()
 
 😍
-typealias PictureIndex = Int
-typealias PictureUrl   = String
+private typealias PictureIndex = Int
+private typealias PictureUrl   = String
 
-val goodVariable = hashMapOf<PictureIndex, PictureUrl>()
+private val goodVariable = hashMapOf<PictureIndex, PictureUrl>()
 ```
 
 
