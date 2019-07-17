@@ -156,6 +156,9 @@ class Good constructor(context: Context) : FrameLayout(context)
 
 ### ✓ 생성자는 아래와 같이 작성한다.
 
+- 상속/구현 라인과 생성자라인에 사이에 LF 한다.
+- sealed class 가 아닌 다른 class 에는 생성자 앞에 constructor 키워드를 붙인다.
+
 ``` kotlin
 😰
 internal class BadClass constructor(
