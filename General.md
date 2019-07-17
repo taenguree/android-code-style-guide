@@ -281,6 +281,24 @@ goodBuilder
   .build()
 ```
 
+### ✓ 축약어를 쓰지 않는다.
+
+``` kotlin
+😰 
+private val usr = User() /** bad variable */
+
+private val std = Student() /** bad variable */
+
+private val probIndex = 0 /** bad variable */
+
+😍
+private val user = User() /** good variable */
+
+private val student = Student() /** good variable */
+
+private val problemIndex = 0 /** good variable */
+```
+
 ### ✓ 변수는 그 변수가 어떤 의미를 갖는 알 수 있도록 충분히 길게 짓는다. 
 
 - 변수의 의미전달 때문에 너무 길어질 경우는 적당한 선에서 작성한다. 0~30 자 내외
