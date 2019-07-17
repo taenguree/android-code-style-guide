@@ -456,3 +456,16 @@ good_lamda.setOnClickListener {
   doNextThing()
 }
 ```
+
+### ✓ 빈 클래스의 경우 Brace 를 생략한다.
+
+``` kotlin
+😰
+internal class BadEmptyclass {
+}
+
+internal class AlsoBadEmptyclass {}
+
+😍
+internal class GoodEmptyclass
+```
