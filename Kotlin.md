@@ -8,7 +8,7 @@
 - two empty lines
 - typealias definitions(if exist)
 - class/interface definition
-- extra contructors(if exist)
+- extra constructors(if exist)
 - companion object definition
 - interface(callback) definition
 - nested/inner class definition(if exist)
@@ -158,7 +158,7 @@ class Good constructor(context: Context) : FrameLayout(context)
 
 ``` kotlin
 😰
-internal class BadClass contructor(
+internal class BadClass constructor(
     private val context: Context,
     private val resources: Resource
 ) : FrameLayout(context) { /** 윗 라인에 공백라인을 추가한다. */
@@ -170,7 +170,7 @@ internal class BadClass contructor(
 }
 
 😍
-internal class GoodClass contructor(
+internal class GoodClass constructor(
     private val context: Context,
     private val resources: Resource
     
