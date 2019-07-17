@@ -389,7 +389,7 @@ internal class BadOuterClass {
     private val myVarialble: Int = 0 /** 위 아래 공백라인이 없어야 함 */
   
   } 
-} /** 윗 라인과 공백라인이 있어야함 */
+} /** 윗 라인에 공백라인이 있어야함 */
 
 internal interface BadInterface {
 
