@@ -1,4 +1,4 @@
-# android-code-style-guide
+# Official Guidelines for android of Knowre
 
 - Knowre 안드로이드 공식 코드 스타일 가이드입니다.
 - 모든 개발자는 본 가이드를 베이스로 코드를 작성하시기를 권고드립니다.
