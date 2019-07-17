@@ -238,12 +238,12 @@ goodBuilder
 
 ``` kotlin
 😰 
-private val index = 0
+private val index = 0 /** bad naming */
 
-private val flag = false
+private val flag = false  /** bad naming */
 
 😍
-private val mainProblemIndex = 0
+private val mainProblemIndex = 0  /** good naming */
 
-private val isMainProblemCorrect = false
+private val isMainProblemCorrect = false  /** good naming */
 ```
