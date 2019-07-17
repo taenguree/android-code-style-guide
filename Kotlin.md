@@ -31,7 +31,7 @@ import i.will.get.audi.r8.eventually
 
 typealias MyCustomInt = Int
 
-internal abstract class MyCustomLayout(
+internal abstract class MyCustomLayout constructor(
     private val context: Context,
     private val attrs: AttributeSet? = null
 
