@@ -27,7 +27,7 @@
 ## file template setting
 
 - 기본적으로 클래스, 리소스 파일을 생성 시 /** Created By ... */ 와 같이 자동 생성되는 문구들이 없도록 한다.
-- kt 파일의 경우 intenral 을 default 로 생성한다.
+- kt 파일의 경우 internal 을 default 로 생성한다.
   - Preference
     - Editor
       - File and code Templates
