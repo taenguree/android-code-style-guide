@@ -124,6 +124,33 @@ private val goodVariable = 0
 internal class GoodClass
 ```
 
+### ✓ 모든 컴포넌트 사이의 공백은 한칸을 사용한다. 두칸 이상 사용하지 않는다.
+
+``` kotlin
+😰
+private val someVariable = 0
+                                        /** 이곳에 공백라인이 두칸이면 */
+                                        /** 안된다. */
+private fun someFunction1() {
+  ...
+}
+                                        /** 이곳에 공백라인이 두칸이면 */
+                                        /** 안된다. */
+private fun someFunction2() {
+  ...
+}
+
+😍
+private val someVariable = 0
+                                        /** 한칸의 공백라인 만 !*/
+private fun someFunction1() {
+  ...
+}
+                                        /** 한칸의 공백라인 만 !*/
+private fun someFunction2() {
+  ...
+}
+```
 
 ### ✓ 불필요한 코멘트는 피한다.
  
