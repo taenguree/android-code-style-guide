@@ -1,6 +1,6 @@
 # Android studio setting (mac 기준)
 
-## style xml setting
+## style xml import
 
 - [구글 스타일 가이드 레포지토리](https://github.com/google/styleguide)를 clone
 - 최상위 폴더에 있는 intellij-java-google-style.xml 파일을 안드로이드 스튜디오에 import 
