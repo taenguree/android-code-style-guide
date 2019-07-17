@@ -267,5 +267,17 @@ internal class RecommendedUserClass(
 }
 ```
 
+### ✓ arguments hint 를 적극적으로 사용한다.
+
+``` kotlin
+😰
+loginRepository.login(id, password) /** not recommended */
+
+😍
+loginRepository.login( /** recommended */
+    id       = id, 
+    password = password) 
+```
+
 
 
