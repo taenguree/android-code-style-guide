@@ -2,7 +2,7 @@
 
 ## [Class component rules]
 
-### ✓ 클래스 내부의 요소들은 아래와 같은 정렬을 따릅니다.
+### ✓ 클래스 내부의 요소들은 아래와 같은 정렬을 따른다.
 
 - package + import statements
 - two empty lines
@@ -114,7 +114,7 @@ internal abstract class MyCustomLayout(
 
 ## [Basic rules]
 
-### ✓ enum 은 대문자로 시작해 camel case 를 사용합니다.
+### ✓ enum 은 대문자로 시작해 camel case 를 사용한다.
 
 ``` kotlin
 😰
@@ -130,10 +130,10 @@ enum GoodEnum {
 }
 ```
 
-### ✓ : 은 아래의 룰에 따릅니다.
+### ✓ : 은 아래의 룰에 따른다.
 
-- 리턴 값을 의미할 경우 suffix space 를 넣지 않습니다.
-- 상속/구현을 의미할 경우 prefix/suffix spaces 를 모두 넣습니다.
+- 리턴 값을 의미할 경우 suffix space 를 넣는다.
+- 상속/구현을 의미할 경우 prefix/suffix spaces 를 모두 넣는다.
 
 ``` kotlin
 😰
@@ -151,14 +151,14 @@ fun good(): String {
 class Good constructor(context: Context) : FrameLayout(context)
 ```
 
-### 생성자는 아래와 같이 작성합니다.
+### ✓ 생성자는 아래와 같이 작성한다.
 
 ``` kotlin
 😰
 internal class BadClass contructor(
     private val context: Context,
     private val resources: Resource
-) : FrameLayout(context) { /** 윗 라인에 공백라인을 추가해야합니다. */
+) : FrameLayout(context) { /** 윗 라인에 공백라인을 추가한다. */
 
   private val variable: Int = 0
 
@@ -167,7 +167,6 @@ internal class BadClass contructor(
 }
 
 😍
-
 internal class GoodClass contructor(
     private val context: Context,
     private val resources: Resource
@@ -180,4 +179,21 @@ internal class GoodClass contructor(
   
 }
 ```
+
+### ✓ 빈 함수의 경우 Unit 을 리턴한다.
+
+``` kotlin
+😰
+fun badEmptyFunction() {
+}
+
+😍
+fun goodEmptyFunction() = Unit
+```
+
+### ✓ data class 를 사용하지 않는다.
+
+- kotlin 은 class 앞에 data keyword 를 붙여 data class 로써 편의함수(equal, hash, copy)등을 자동포함하도록 하는 기능이 있다.
+- 하지만 이를 사용하지 않는다.
+- 그 이유에 대해서는 이곳에 서술하기엔 길어지므로 lead programmer 에게 문의
 
