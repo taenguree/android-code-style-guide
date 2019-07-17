@@ -7,6 +7,7 @@
 - 기본적으로 Camel case 를 사용한다.
 - 하지만 아래와 같은 예외는 있다.
   - 테스트 코드의 실제 테스트 함수명은 snake case 로 사용한다.
+  - ~테스트 코드는 한글로 작성할까 고려 중..~
     ``` kotlin
     fun this_function_return_true() { ... }
     ```
