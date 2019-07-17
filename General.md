@@ -382,7 +382,7 @@ if(goodIfCondition &&
 ``` kotlin
 😰 
 internal class BadOuterClass {
-  private val context: Context? = null /** 윗 라인과 공백라인이 있어야함 */
+  private val context: Context? = null /** 윗 라인에 공백라인이 있어야함 */
   
   class BadNestedClass {
   
