@@ -39,12 +39,7 @@ internal abstract class MyCustomLayout constructor(
 
   constructor(context: Context, attrs: AttributeSet? = null, extra: Int) : this(context, attrs, extra)
   
-  constructor(
-      context: Context, 
-      attrs: AttributeSet? = null, 
-      extra: Int, 
-      extra1: Int
-  ) : this(context, attrs, extra)
+  constructor(context: Context, attrs: AttributeSet? = null, extra: Int, extra1: Int) : this(context, attrs, extra)
   
   companion object {
     private const val MAX_LAYOUT_WIDTH  = 100F
