@@ -11,7 +11,7 @@
 - Guide for [Kotlin](https://github.com/taenguree/android-code-style-guide/blob/master/Kotlin.md) rules
 - Guide for [Xml](https://github.com/taenguree/android-code-style-guide/blob/master/Xml.md) rules
 
-# Studio setting (Mac 기준)
+# Studio setting (mac 기준)
 
 ## style xml setting
 
