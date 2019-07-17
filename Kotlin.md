@@ -234,5 +234,34 @@ if(someVariable != null) { /** recommended */
 }
 ```
 
+### ✓ 데이터를 담는 클래스에 기본값을 지양한다.
+
+- 기본값을 무조건 쓰지 말라는 것은 아니고 최대한 지양한다.
+
+``` kotlin
+😰
+class NotRecommendedUserClass(
+    private val id: String       = "",
+    private val password: String = "",
+            var type: UserType   = UserType.New()
+)
+
+😍
+class RecommendedUserClass(
+    private val id: String,
+    private val password: String
+) {
+
+  private lateinit var type: UserType
+  
+  fun setUserType(type: UserType) {
+    this.type = type
+  }
+  
+  fun getUserType() = type
+
+}
+```
+
 
 
