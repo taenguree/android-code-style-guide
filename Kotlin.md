@@ -217,5 +217,19 @@ private val goodVariable = hashMapOf<PictureIndex, PictureUrl>()
   - 앱이 절대로 죽어서는 안되는 비지니스라면 해당하지 않는다.
   - 앱을 죽이지 않고도 리포트를 crashlytics 수준으로 받을 수 있는 내부 인프라가 있다면 !! 를 사용하지 않아도 좋다.
 
+### ✓ optional?.let { ... } 보다는 if 문을 사용한다.
+
+``` kotlin
+😰
+someVariable?.let { /** not recommanded */
+  ...
+}
+
+😍
+if(someVariable != null) { /** recommanded */
+  ...
+}
+```
+
 
 
