@@ -99,7 +99,6 @@ loginRepository.requestLogin(
 )
 
 😍
-
 loginRepository.requestLogin(
   id       = id,
   password = password,
@@ -212,4 +211,39 @@ lateinit var badAnnotating: String
 
 😍
 @Inject @field:Good lateinit var goodAnnotating: String
+```
+
+### ✓ Builder 패턴의 코드를 부를 때에는 메소드를 세번이상 부를 때 LF 한다.
+
+``` kotlin
+😰 
+badBuilder.setInt(1)
+  .build()
+  
+badBuilder.setInt(1).setBoolean(false).build()
+
+😍
+😰 
+goodBuilder.setInt(1).build()
+  
+goodBuilder
+  .setInt(1)
+  .setBoolean(false)
+  .build()
+```
+
+### ✓ 변수는 그 변수가 어떤 의미를 가지는지 모두 포함할 수 있도록 길게 짓는다.
+
+- flag 라는 이름의 변수명 절대 사용하지 않는다.
+
+``` kotlin
+😰 
+private val index = 0
+
+private val flag = false
+
+😍
+private val mainProblemIndex = 0
+
+private val isMainProblemCorrect = false
 ```
