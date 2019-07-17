@@ -21,6 +21,60 @@
 
 ### ✓ static / const 필드는 전부 대문자로 작성하며 snake case 를 사용한다.
 
+### ✓ table-like line-up (tllu)
+
+- 생성자에 arguments 가 많아져 코드가 길어질 경우 가독성을 높이기 위해 아래를 참조해 코드라인의 정렬을 맞춘다.
+  - 예외) 생성자가 안의 arguments 가 1-3 개일 경우 그리고 그렇게 길지 않을 경우는 한 줄로 써도 무방하다.
+
+``` kotlin
+😰 
+class BadLineUpConstructor constructor(private val resource: Resources, private val weakContext: WeakReference<Context>, private val repository: RepositoryApi, private val remoteAction: RemoteActionApi) : ParentClass {
+
+😍
+class GoodLineUpConstructor constructor(
+    private val resource: Resources, 
+    private val weakContext: WeakReference<Context>, 
+    private val repository: RepositoryApi, 
+    private val remoteAction: RemoteActionApi
+    
+) : ParentClass {
+
+    ....
+
+}
+```
+
+- 논리적으로 유사한 작업을 하는 코드라인들을 붙여서 작성할 경우 아래를 참조해 코드라인의 정렬을 맞춘다.
+  - 예외) 라인사이에 공백라인이 있을 경우 tllu 하지 않는다. 즉, tllu 하기 싫다면 라인사이에 공백을 넣는다.
+  
+``` kotlin
+😰
+//case 1
+val badLineUp = PublishRelay<Int>.create()
+val badLineUpSecondRelay = PublishRelay<Int>.create()
+val badLineUpThirdRelay = PublishRelay<Int>.create()
+
+//case 2
+val alsoBadLineUp            = PublishRelay<Int>.create()
+
+val alsoBadLineUpSecondRelay = PublishRelay<Int>.create()
+
+val alsoBadLineUpThirdRelay  = PublishRelay<Int>.create()
+
+😍
+//case 1
+val goodLineUp            = PublishRelay<Int>.create()
+val goodLineUpSecondRelay = PublishRelay<Int>.create()
+val goodLineUpThirdRelay  = PublishRelay<Int>.create()
+
+//case2
+val alsoGoodLineUp = PublishRelay<Int>.create()
+
+val alsoGoodLineUpSecondRelay = PublishRelay<Int>.create()
+
+val alsoGoodLineUpThirdRelay = PublishRelay<Int>.create()
+```
+
 ### ✓ 불필요한 코멘트는 피한다.
  
 - 아래와 같은 경우에만 코멘트를 작성하며 코멘트는 ``` // ``` 가 아닌 ``` /** ... */ ``` 를 사용한다.
