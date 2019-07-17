@@ -250,6 +250,7 @@ class NotRecommendedUserClass(
 class RecommendedUserClass(
     private val id: String,
     private val password: String
+    
 ) {
 
   private lateinit var type: UserType
