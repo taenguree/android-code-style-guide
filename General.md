@@ -88,6 +88,25 @@ val alsoGoodLineUpSecondRelay = PublishRelay<Int>.create()
 val alsoGoodLineUpThirdRelay = PublishRelay<Int>.create()
 ```
 
+- kotlin 함수 콜에서 hint 도 아래를 참조해 정렬을 맞춘다.
+
+``` kotlin
+😰
+loginRepository.requestLogin(
+  id = id,
+  password = password,
+  token = token
+)
+
+😍
+
+loginRepository.requestLogin(
+  id       = id,
+  password = password,
+  token    = token
+)
+```
+
 ### ✓ 불필요한 코멘트는 피한다.
  
 - 아래와 같은 경우에만 코멘트를 작성하며 코멘트는 ``` // ``` 가 아닌 ``` /** ... */ ``` 를 사용한다.
