@@ -347,7 +347,7 @@ companion object {
   private const val NORMAL_PROBLEM_TYPE_PROVIDED_BY_SERVER = "N"
 }
 
-if(currentProblemNumber == DEFAULT_PROBLEM_NUMBER) { /** good */
+if(currentProblemNumber == MAX_PROBLEM_NUMBER) { /** good */
   completeLesson()
   navigateToResult()
 }
