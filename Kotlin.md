@@ -130,7 +130,7 @@ enum GoodEnum {
 }
 ```
 
-### ✓ : 은 아래의 룰에 따른다.
+### ✓ Colon(:) 은 아래의 룰에 따른다.
 
 - 리턴 값을 의미할 경우 suffix space 를 넣는다.
 - 상속/구현을 의미할 경우 prefix/suffix spaces 를 모두 넣는다.
