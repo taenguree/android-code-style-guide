@@ -21,6 +21,20 @@
 
 ### ✓ static / const 필드는 전부 대문자로 작성하며 snake case 를 사용한다.
 
+``` kotlin
+😰
+companion object {
+  private const val badConstVariable = 1
+  private const val also_bad_const_variable = 1
+}
+
+😍
+companion object {
+  private const val GOOD_CONST_VARIABLE = 1
+}
+
+```
+
 ### ✓ table-like line-up (tllu)
 
 - 생성자에 arguments 가 많아져 코드가 길어질 경우 가독성을 높이기 위해 아래를 참조해 코드라인의 정렬을 맞춘다.
