@@ -41,10 +41,10 @@ companion object {
 
 ``` kotlin
 😰 
-class BadLineUpConstructor constructor(private val resource: Resources, private val weakContext: WeakReference<Context>, private val repository: RepositoryApi, private val remoteAction: RemoteActionApi) : ParentClass {
+internal class BadLineUpConstructor constructor(private val resource: Resources, private val weakContext: WeakReference<Context>, private val repository: RepositoryApi, private val remoteAction: RemoteActionApi) : ParentClass {
 
 😍
-class GoodLineUpConstructor constructor(
+internal class GoodLineUpConstructor constructor(
     private val resource: Resources, 
     private val weakContext: WeakReference<Context>, 
     private val repository: RepositoryApi, 
@@ -63,29 +63,29 @@ class GoodLineUpConstructor constructor(
 ``` kotlin
 😰
 //case 1
-val badLineUp = PublishRelay<Int>.create()
-val badLineUpSecondRelay = PublishRelay<Int>.create()
-val badLineUpThirdRelay = PublishRelay<Int>.create()
+private val badLineUp = PublishRelay<Int>.create()
+private val badLineUpSecondRelay = PublishRelay<Int>.create()
+private val badLineUpThirdRelay = PublishRelay<Int>.create()
 
 //case 2
-val alsoBadLineUp            = PublishRelay<Int>.create()
+private val alsoBadLineUp            = PublishRelay<Int>.create()
 
-val alsoBadLineUpSecondRelay = PublishRelay<Int>.create()
+private val alsoBadLineUpSecondRelay = PublishRelay<Int>.create()
 
-val alsoBadLineUpThirdRelay  = PublishRelay<Int>.create()
+private val alsoBadLineUpThirdRelay  = PublishRelay<Int>.create()
 
 😍
 //case 1
-val goodLineUp            = PublishRelay<Int>.create()
-val goodLineUpSecondRelay = PublishRelay<Int>.create()
-val goodLineUpThirdRelay  = PublishRelay<Int>.create()
+private val goodLineUp            = PublishRelay<Int>.create()
+private val goodLineUpSecondRelay = PublishRelay<Int>.create()
+private val goodLineUpThirdRelay  = PublishRelay<Int>.create()
 
 //case2
-val alsoGoodLineUp = PublishRelay<Int>.create()
+private val alsoGoodLineUp = PublishRelay<Int>.create()
 
-val alsoGoodLineUpSecondRelay = PublishRelay<Int>.create()
+private val alsoGoodLineUpSecondRelay = PublishRelay<Int>.create()
 
-val alsoGoodLineUpThirdRelay = PublishRelay<Int>.create()
+private val alsoGoodLineUpThirdRelay = PublishRelay<Int>.create()
 ```
 
 - kotlin 함수 콜에서 hint 도 아래를 참조해 정렬을 맞춘다.
@@ -181,7 +181,7 @@ else {
 😰 
 if(condition) { Log.d(TAG, "bad!") }
 
-val badOpeartorStyle = Observable.just(1, 2, 3)
+private val badOpeartorStyle = Observable.just(1, 2, 3)
   .filter {
     it == 1
   }
@@ -200,7 +200,7 @@ else {
   Log.d(TAG, "also GOOD!")
 }
 
-val goodOperatorStyle = Observable.just(1, 2, 3)
+private val goodOperatorStyle = Observable.just(1, 2, 3)
   .filter { it == 1 }
   .map { it + SOME_VALUE }
   
