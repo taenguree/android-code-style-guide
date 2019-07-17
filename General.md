@@ -287,7 +287,7 @@ if(problemType == NORMAL_PROBLEM_TYPE_PROVIDED_BY_SERVER) { /** good */
 
 ### ✓ 0부터 시작하는 변수는 index 라는 변수명 사용하고 1부터 시작하는 변수는 order 나 number 라는 변수명을 사용한다.
 
-### if 조건에 여러개(3개 이상)의 조건이 필요할 경우 아래와 같이 작성한다.
+### ✓ if 조건에 여러개(3개 이상)의 조건이 필요할 경우 아래와 같이 작성한다.
 
 ``` kotlin
 😰 
@@ -303,5 +303,50 @@ if(goodIfCondition &&
 }
 ```
 
+### ✓ {outer|inner|nested|sealed}클래스/인터페이스의 시작과 끝 공백라인 첨가 여부는 아래 룰을 따른다.
 
+- 최상위 outer 클래스만 클래스의 시작과 끝에 공백을 넣고 나머지는 공백을 넣지 않는다.
 
+``` kotlin
+😰 
+internal class BadOuterClass {
+  private val context: Context? = null /** 윗 라인과 공백라인이 있어야함 */
+  
+  class BadNestedClass {
+  
+    private val myVarialble: Int = 0 /** 위 아래 공백라인이 없어야 함 */
+  
+  } 
+} /** 윗 라인과 공백라인이 있어야함 */
+
+internal interface BadInterface {
+
+  fun doSomething() /** 위 아래 공백라인이 없어야 함 */
+
+}
+
+😍
+internal class GoodOuterClass { /** outer 클래스이므로 시작과 끝에 공백라인이 있음 */
+
+  private val context: Context? = null
+  
+  class GoodNestedClass { /** nested 클래스이므로 시작과 끝에 공백라인이 없음 */
+    private val myVarialble: Int = 0 
+  }
+  
+}
+
+internal interface GoodInterface { /** interface 이므로 시작과 끝에 공백라인이 없음 */
+  fun doSomething()
+}
+
+internal seald class GoodSealedClass { /** sealed class 이므로 시작과 끝에 공백라인이 없음 */
+  class Class1( /** nested class 이므로 시작과 끝에 공백라인이 없음 */
+    val variable: Int,
+    val variable1: Int,
+    val variable2: Int,
+  ) : GoodSealedClass()
+  
+    class Class2(val variable: Int) : GoodSealedClass()
+}
+```
