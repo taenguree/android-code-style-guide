@@ -419,7 +419,7 @@ internal sealed class GoodSealedClass { /** sealed class 이므로 시작과 끝
     val variable2: Int,
   ) : GoodSealedClass()
   
-    class Class2(val variable: Int) : GoodSealedClass()
+  class Class2(val variable: Int) : GoodSealedClass()
 }
 ```
 
