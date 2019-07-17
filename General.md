@@ -63,7 +63,11 @@ companion object {
 
 ``` kotlin
 😰 
-internal class BadLineUpConstructor constructor(private val resource: Resources, private val weakContext: WeakReference<Context>, private val repository: RepositoryApi, private val remoteAction: RemoteActionApi) : ParentClass {
+internal class BadLineUpConstructor constructor(private val resource: Resources, private val weakContext: WeakReference<Context>, private val repository: RepositoryApi, private val remoteAction: RemoteActionApi) : ParentClass { 
+
+  ...
+
+}
 
 😍
 internal class GoodLineUpConstructor constructor(
@@ -74,7 +78,7 @@ internal class GoodLineUpConstructor constructor(
     
 ) : ParentClass {
 
-    ....
+    ...
 
 }
 ```
