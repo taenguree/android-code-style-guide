@@ -114,7 +114,7 @@
         android:layout_gravity="start"
         android:padding="5dp"
         android:background="#ffffff"
-        android:orientation="vertical"/>  <!-- 올바른 사용법 -->
+        android:orientation="vertical" />  <!-- 올바른 사용법 -->
 
 </androidx.drawerlayout.widget.DrawerLayout>
 ```
