@@ -32,14 +32,14 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-                                                                      <!-- 이처럼 이곳에 공백라인이 있어야 한다. -->
+                                                             <!-- 이처럼 이곳에 공백라인이 있어야 한다. -->
     <RelativeLayout
         android:id="@+id/root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/background_light"
         android:orientation="vertical" />
-                                                                      <!-- 이처럼 이곳에 공백라인이 있어야 한다. -->
+                                                             <!-- 이처럼 이곳에 공백라인이 있어야 한다. -->
 </androidx.drawerlayout.widget.DrawerLayout>
 ```
 
