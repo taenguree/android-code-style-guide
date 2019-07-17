@@ -146,11 +146,11 @@ private fun someFunction2() {
 
 😍
 private val someVariable = 0
-                                        /** 한칸의 공백라인 만 !*/
+                                        /** 한칸의 공백라인만 !*/
 private fun someFunction1() {
   ...
 }
-                                        /** 한칸의 공백라인 만 !*/
+                                        /** 한칸의 공백라인만 !*/
 private fun someFunction2() {
   ...
 }
