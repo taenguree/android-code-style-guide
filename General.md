@@ -363,7 +363,7 @@ if(problemType == NORMAL_PROBLEM_TYPE_PROVIDED_BY_SERVER) { /** good */
 
 ``` kotlin
 😰 
-if(badIfCondition1 && badIfCondition1 && badIfCondigion2) {
+if(badIfCondition && badIfCondition1 && badIfCondigion2) {
   ...
 }
 
