@@ -367,3 +367,42 @@ internal sealed class GoodSealedClass { /** sealed class 이므로 시작과 끝
     class Class2(val variable: Int) : GoodSealedClass()
 }
 ```
+
+### ✓ 함수/람다|클로져의 시작과 끝에는 공백라인을 넣지 않는다.
+
+``` kotlin
+😰
+private fun badFunction() {
+
+  doSomething()
+
+}
+
+private fun alsoBadFunction() {
+
+  doSomething()
+}
+
+private fun alsoAlsoBadFunction() {
+  doSomething()
+  
+}
+
+bad_lamda.setOnClickListener {
+
+  doSomething()
+  doNextThing()
+  
+}
+
+😍
+private fun goodFunction() {
+  doSomething()
+  doNextThing()
+}
+
+good_labda.setOnClickListener {
+  doSomething()
+  doNextThing()
+}
+```
