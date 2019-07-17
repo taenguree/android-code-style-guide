@@ -69,3 +69,37 @@ else {
 }
 ```
 
+### ✓ 코드의 흐름은 가로보다는 세로의 흐름으로 작성한다.
+
+- if, switch, when, for 문등은 가로로 한 줄로 쓰기보다는 세로로 작성한다.
+- 예외) 단, rx operator, lamda/closure 에서는 *내부 로직이 한 줄로 작성이 가능할 경우* 한 줄로 작성한다.
+
+``` kotlin
+😰 
+if(condition) { Log.d(TAG, "bad!") }
+
+val badOpeartorStyle = Observable.just(1, 2, 3)
+  .filter {
+    it == 1
+  }
+  .map {
+    it + SOME_VALUE
+  }
+  
+bad_lamda.setOnClickListener {
+  doSomething()
+}
+
+😍 
+if(condition) {
+  Log.d(TAG, "GOOD!") }
+else {
+  Log.d(TAG, "also GOOD!")
+}
+
+val goodOperatorStyle = Observable.just(1, 2, 3)
+  .filter { it == 1 }
+  .map { it + SOME_VALUE }
+  
+good_lamda.setOnClickListener { doSomething() }
+```
