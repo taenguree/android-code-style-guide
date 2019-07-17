@@ -5,6 +5,12 @@
 - 다만, 가이드가 모든 상황들을 다룰 수 없고 이미 정의된 룰이라 할지라도 예외는 발생할 수 있기 때문에 기본 참조용으로 사용합니다.
 - 룰로 정해져있지 않는 상황, 예외, 수정제안등은 PR 부탁드립니다.
 
+# Guides
+
+- Guide for [General](https://github.com/taenguree/android-code-style-guide/blob/master/General.md) rules
+- Guide for [Kotlin](https://github.com/taenguree/android-code-style-guide/blob/master/Kotlin.md) rules
+- Guide for [Xml](https://github.com/taenguree/android-code-style-guide/blob/master/Xml.md) rules
+
 # Studio setting (Mac 기준)
 
 ## style xml setting
@@ -71,9 +77,3 @@
           internal interface ${NAME} {
           }
           ```
-  
-# Guides
-
-- Guide for [General](https://github.com/taenguree/android-code-style-guide/blob/master/General.md) rules
-- Guide for [Kotlin](https://github.com/taenguree/android-code-style-guide/blob/master/Kotlin.md) rules
-- Guide for [Xml](https://github.com/taenguree/android-code-style-guide/blob/master/Xml.md) rules
