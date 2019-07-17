@@ -2,6 +2,24 @@
 
 ## [ Basic rules ]
 
+### ✓ 무엇을 선언할 때는 기본적으로 가시성이 가장 좁게 선언한다.
+
+🌟뭐든지 우선 안되게 하고 나중에 필요시 되게하라. 🌟
+- 변수/함수를 선언할 경우 습관적으로 private 를 붙여 선언하고 이후 외부에서 필요 시 public 으로 전환한다.
+- 클래스의 경우 기본적으로 internal 을 붙여 선언한다.
+
+``` kotlin
+😰 
+val badVarible = 0
+
+class BadClass
+
+😍
+private val goodVariable = 0
+
+internal class GoodClass
+```
+
 ### ✓ CamelCase base
 
 - 기본적으로 Camel case 를 사용한다.
@@ -105,23 +123,6 @@ loginRepository.requestLogin(
   password = password,
   token    = token
 )
-```
-
-### ✓ 무엇을 선언할 때는 기본적으로 가시성이 가장 좁게 선언한다.
-
-- 변수/함수를 선언할 경우 습관적으로 private 를 붙여 선언하고 이후 외부에서 필요 시 public 으로 전환한다.
-- 클래스의 경우 기본적으로 internal 을 붙여 선언한다.
-
-``` kotlin
-😰 
-val badVarible = 0
-
-class BadClass
-
-😍
-private val goodVariable = 0
-
-internal class GoodClass
 ```
 
 ### ✓ 모든 컴포넌트 사이의 공백은 한칸을 사용한다. 두칸 이상 사용하지 않는다.
