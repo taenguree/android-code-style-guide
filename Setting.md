@@ -1,4 +1,4 @@
-# Studio setting (mac 기준)
+# Android studio setting (mac 기준)
 
 ## style xml setting
 
