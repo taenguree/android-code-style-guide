@@ -25,7 +25,6 @@
 😰
 companion object {
   private const val badConstVariable = 1
-  private const val also_bad_const_variable = 1
 }
 
 😍
