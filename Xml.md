@@ -11,7 +11,7 @@
 | 다이얼로그 프래그먼트 | dialog_fragment_{name} |
 | 커스텀 View | view_{name} |
 | ViewHolder | view_holder_{name} |
-| include 되는 xml | include_layout |
+| include 되는 xml | include_layout_{name} |
 
 ### ✓ xml 뷰 요소들의 id 는 아래와 같은 네이밍 룰을 따른다.
 
@@ -118,3 +118,6 @@
 
 </androidx.drawerlayout.widget.DrawerLayout>
 ```
+
+- 구글 스타일 xml 을 임포트했다면 위 룰들따라 xml 을 작성 후 command+option+L 을 눌러 코드를 reformat 한다.
+    - reformat 단축키는 안드로이드 스튜디오 설정마다 개인별로 다를 수 있다.
