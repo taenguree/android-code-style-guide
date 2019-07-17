@@ -289,7 +289,8 @@ loginRepository.login(id, password) /** not recommended */
 😍
 loginRepository.login( /** recommended */
     id       = id, 
-    password = password) 
+    password = password
+) 
 ```
 
 
