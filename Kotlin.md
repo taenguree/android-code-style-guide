@@ -63,8 +63,8 @@ internal abstract class MyCustomLayout(
     class Lock : Entry() 
   }
   
-  abtract fun hasRootView(): Boolean
-  abtract fun getRootView(): View
+  abstract fun hasRootView(): Boolean
+  abstract fun getRootView(): View
   
   private lateinit var viewState: ViewState
   
