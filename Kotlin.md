@@ -221,12 +221,12 @@ private val goodVariable = hashMapOf<PictureIndex, PictureUrl>()
 
 ``` kotlin
 😰
-someVariable?.let { /** not recommanded */
+someVariable?.let { /** not recommended */
   ...
 }
 
 😍
-if(someVariable != null) { /** recommanded */
+if(someVariable != null) { /** recommended */
   ...
 }
 ```
