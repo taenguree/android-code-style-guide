@@ -270,9 +270,9 @@ if(problemType == "N") { /** bad magic string */
 
 😍
 companion object {
-  private val MAX_PROBLEM_NUMBER = 10
+  private const val MAX_PROBLEM_NUMBER = 10
   
-  private val NORMAL_PROBLEM_TYPE_PROVIDED_BY_SERVER = "N"
+  private const val NORMAL_PROBLEM_TYPE_PROVIDED_BY_SERVER = "N"
 }
 
 if(currentProblemNumber == DEFAULT_PROBLEM_NUMBER) { /** good */
