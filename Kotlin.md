@@ -210,4 +210,12 @@ private typealias PictureUrl   = String
 private val goodVariable = hashMapOf<PictureIndex, PictureUrl>()
 ```
 
+### ✓ optional 변수에 대한 unwarpping(!!) 을 적극적으로 사용한다.
+
+- optional 인 변수가 특정순간에는 확실이 값이 있어야 한다라고 확신한다면 !! 을 적극적으로 사용한다.
+- 버그로 인해 해당 변수가 그 순간에 null 이라면 앱이 죽을 것이고 crashlytics 로 리포트가 전송돼 개발자가 빠르게 인지할 수 있다.
+  - 앱이 절대로 죽어서는 안되는 비지니스라면 해당하지 않는다.
+  - 앱을 죽이지 않고도 리포트를 crashlytics 수준으로 받을 수 있는 내부 인프라가 있다면 !! 를 사용하지 않아도 좋다.
+
+
 
