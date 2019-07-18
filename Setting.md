@@ -64,3 +64,8 @@
           internal interface ${NAME} {
           }
           ```
+
+## extra setting
+
+- parameter name hint 를 disable 한다.
+  - AndroidStudio -> Preference -> Editor -> General -> Appearance -> 'show parameter name hints' 체크해제
