@@ -246,6 +246,38 @@ if(someVariable != null) { /** recommended */
 }
 ```
 
+### ✓ Rx operator 는 아래와 같은 정렬을 사용한다.
+
+- 한 두개의 operator 를 사용해 한 줄에 짧게 끝날 경우 한 줄로 작성한다.
+- operator 여러개일 경우 LF 해서 사용한다.
+
+``` kotlin
+😰
+private val badRxOperatorStyle = Observable.just(1,2,3)
+  .filter { it == 1}
+
+private val alsoBadRxOperatorStyle = Observable.just(1, 2, 3).filter {
+    it == 1
+  }.map {
+    it + SOME_VALUE
+  }
+
+private val alsoBadRxOperatorStyle = Observable.just(1, 2, 3)
+  .filter {
+    it == 1
+  }
+  .map {
+    it + SOME_VALUE
+  }
+
+😍
+private val goodRxOperatorStyle = Observable.just(1,2,3).filter { it == 1}
+
+private val alsoGoodRxOperatorStyle = Observable.just(1, 2, 3)
+  .filter { it == 1 }
+  .map { it + SOME_VALUE }
+```
+
 ### ✓ 데이터를 담는 클래스에 기본값을 지양한다.
 
 - 기본값을 무조건 쓰지 말라는 것은 아니고 최대한 지양한다.
