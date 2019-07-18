@@ -253,16 +253,16 @@ if(someVariable != null) { /** recommended */
 
 ``` kotlin
 😰
-private val badRxOperatorStyle = Observable.just(1,2,3)
+private val badRxOperatorStyle = observable
   .filter { it == 1}
 
-private val alsoBadRxOperatorStyle = Observable.just(1, 2, 3).filter {
+private val alsoBadRxOperatorStyle = observable.filter {
     it == 1
   }.map {
     it + SOME_VALUE
   }
 
-private val alsoBadRxOperatorStyle = Observable.just(1, 2, 3)
+private val alsoBadRxOperatorStyle = observable
   .filter {
     it == 1
   }
@@ -271,9 +271,9 @@ private val alsoBadRxOperatorStyle = Observable.just(1, 2, 3)
   }
 
 😍
-private val goodRxOperatorStyle = Observable.just(1,2,3).filter { it == 1}
+private val goodRxOperatorStyle = observable.filter { it == 1}
 
-private val alsoGoodRxOperatorStyle = Observable.just(1, 2, 3)
+private val alsoGoodRxOperatorStyle = observable
   .filter { it == 1 }
   .map { it + SOME_VALUE }
 ```
