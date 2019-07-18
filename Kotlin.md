@@ -254,9 +254,9 @@ if(someVariable != null) { /** recommended */
 ``` kotlin
 😰
 private val badRxOperatorStyle = observable
-  .filter { it == 1}
+  .filter { it == 1} /** 한 줄에 충분히 쓸 수 있을 만큼 많이 짧으므로 한 줄로 작성한다. */
 
-private val alsoBadRxOperatorStyle = observable.filter {
+private val alsoBadRxOperatorStyle = observable.filter { /** operator 여러개일 경우 LF 해서 사용한다. */
     it == 1
   }.map {
     it + SOME_VALUE
@@ -264,10 +264,10 @@ private val alsoBadRxOperatorStyle = observable.filter {
 
 private val alsoBadRxOperatorStyle = observable
   .filter {
-    it == 1
+    it == 1 /** 오퍼레이터 안의 로직이 한 줄로 충분히 작성하능 할 경우 한 줄로 작성한다. */
   }
-  .map {
-    it + SOME_VALUE
+  .map { 
+    it + SOME_VALUE 
   }
 
 😍
