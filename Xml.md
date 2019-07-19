@@ -15,7 +15,17 @@
 
 ### ✓ xml 뷰 요소들의 id 는 아래와 같은 네이밍 룰을 따른다.
 
-- 논의 필요
+- 뷰 이름의 대문자만 따서 만든 축약어와 뷰의 성격을 나타내는 이름을 조합해서 만든다.
+    - {축약어}_{이름}
+    - 예) 
+
+        | 뷰 원래 이름 | 뷰 id |
+        | --------------- | --------------- |
+        | NestedScrollView | android:id="@+id/```nsv_login_history```" |
+        | ConstraintLayout | android:id="@+id/```cl_login_history```" |
+        | LinearLayout | android:id="@+id/```ll_login_histroy```" |
+
+- 두개의 다른 뷰가 축약어가 겹치는 경우는 여기에 따로 기록한다.
 
 ## [Basic rules]
 
