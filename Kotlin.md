@@ -156,7 +156,7 @@ class Good constructor(context: Context) : FrameLayout(context)
 
 ``` kotlin
 😰
-internal class BadClass constructor(
+internal class BadClass ( /** constructor 키워드가 있어야 한다. */
     private val context: Context,
     private val resources: Resource
 ) : FrameLayout(context) { /** 윗 라인에 공백라인을 추가한다. */
