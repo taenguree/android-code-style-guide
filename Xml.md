@@ -21,9 +21,9 @@
 
         | 뷰 원래 이름 | 뷰 id |
         | --------------- | --------------- |
-        | NestedScrollView | android:id="@+id/```nsv_login_history```" |
-        | ConstraintLayout | android:id="@+id/```cl_login_history```" |
-        | LinearLayout | android:id="@+id/```ll_login_histroy```" |
+        | NestedScrollView | android:id="@+id/```nsv_problem_solving_history```" |
+        | ConstraintLayout | android:id="@+id/```cl__problem_solving_history```" |
+        | LinearLayout | android:id="@+id/```ll_problem_solving_histroy```" |
 
 - 두개의 다른 뷰가 축약어가 겹치는 경우는 여기에 따로 기록한다.
 
