@@ -42,13 +42,13 @@ internal class RoadMapCellLayout constructor : FrameLayout(...)
 internal class CircledLayout constructor : ImageView(...)
 
 😍
-internal class CircledImageView constructor : FrameLayout(...)
+internal class CircledImageView constructor : ImageView(...)
 ```
 
 - custom 된 뷰가 xml 에서 쓰일 경우 id 앞에 custom_{부모뷰의 축약어} 이라는 prefix 를 붙인다.     
     - 예)
-        - android:id="@+id/```custom_iv```"_circled"
-        - android:id="@+id/```custom_fl```"_road_map_cell"
+        - android:id="@+id/"```custom_iv```_circled"
+        - android:id="@+id/"```custom_fl```_road_map_cell"
 
 ## [Basic rules]
 
