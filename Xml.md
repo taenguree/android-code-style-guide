@@ -27,6 +27,29 @@
 
 - 두개의 다른 뷰가 축약어가 겹치는 경우는 여기에 따로 기록한다.
 
+- ViewGroup 을 상속받는 커스텀 뷰의 경우 이름을 {이름}Layout 으로 명명한다.
+``` kotlin
+😰
+internal class RoadMapCellView constructor : FrameLayout(...)
+
+😍
+internal class RoadMapCellLayout constructor : FrameLayout(...)
+```
+
+- ViewGroup 이 아닌 View 를 상속받는 커스텀 뷰의 경우 이름을 {이름}View 으로 명명한다.
+``` kotlin
+😰
+internal class CircledLayout constructor : ImageView(...)
+
+😍
+internal class CircledImageView constructor : FrameLayout(...)
+```
+
+- custom 된 뷰가 xml 에서 쓰일 경우 id 앞에 custom_{부모뷰의 축약어} 이라는 prefix 를 붙인다.     
+    - 예)
+        - android:id="@+id/```custom_iv```"_circled"
+        - android:id="@+id/```custom_fl```"_road_map_cell"
+
 ## [Basic rules]
 
 ### ✓ xml 뷰 요소들 간의 공백라인은 아래와 같은 룰을 따른다.
