@@ -11,3 +11,7 @@
 ## [ Method Naming Rules ]
 
 ### ✓ 
+
+## [ MVCH Rules ]
+
+### ✓ 
