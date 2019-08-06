@@ -9,6 +9,7 @@
 # Guidelines
 
 - Guide for [General](https://github.com/taenguree/android-code-style-guide/blob/master/General.md) rules
+- Guide for [Naming](https://github.com/taenguree/android-code-style-guide/blob/master/Naming.md) rules
 - Guide for [Kotlin](https://github.com/taenguree/android-code-style-guide/blob/master/Kotlin.md) rules
 - Guide for [Xml](https://github.com/taenguree/android-code-style-guide/blob/master/Xml.md) rules
 - Guide for ~Java~ rules
