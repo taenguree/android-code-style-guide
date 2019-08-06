@@ -7,3 +7,7 @@
 ## [ Variable Naming Rules ]
 
 ### ✓ 
+
+## [ Method Naming Rules ]
+
+### ✓ 
