@@ -1,8 +1,32 @@
 # Naming
 
-## [ Class Naming Rules ]
+## [ Class/Interface Naming Rules ]
 
-### ✓ 
+### ✓ 특정 기능을 하는 Interface 와 이를 상속받는 클래스가 있을 경우 아래와 같은 룰을 따른다.
+
+- Interface 에는 Api 라는 suffix 를 붙이고 클래스에는 suffix 를 붙이지 않는다.
+
+``` kotlin
+😰
+internal interface TypeConverter {
+  //...
+}
+
+internal class TypeConverterImpl : TypeConverter {
+  //..
+}
+
+😍
+internal interface TypeConverterApi {
+  //...
+}
+
+internal class TypeConverter : TypeConverterApi {
+  //..
+}
+
+```
+
 
 ## [ Variable/Method Naming Rules ]
 
