@@ -10,7 +10,7 @@
 
 - {중요정보명사}{동사}{기타정보}{부사}
 
-```
+``` kotlin
 😰
 private var fetchedProblemList = channel.ofData().ofType<RemoteData.Problem.Fetched>
 
