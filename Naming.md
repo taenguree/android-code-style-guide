@@ -6,9 +6,21 @@
 
 ## [ Variable/Method Naming Rules ]
 
-### ✓ 참/거짓을 나타내는 변수는 아래의 룰을 따른다. Method 도 포함
+### ✓ 상태를 나타내는 변수는 아래와 같은 룰을 따른다.
 
-- {is|should|has|...}{중요정보명사}{수동태동사}{부사}
+- {중요정보명사}{동사}{기타정보}{부사}
+
+```
+😰
+private var fetchedProblemList = channel.ofData().ofType<RemoteData.Problem.Fetched>
+
+😍
+private var problemListFetched = channel.ofData().ofType<RemoteData.Problem.Fetched>
+```
+
+### ✓ 참/거짓을 나타내는 변수는 아래의 룰을 따른다.
+
+- {is|should|has|...}{중요정보명사}{동사}{기타정보}{부사}
 
 ``` kotlin 
 😰
