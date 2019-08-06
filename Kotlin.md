@@ -334,11 +334,18 @@ internal class RecommendedUserClass constructor(
 
 ### ✓ arguments hint 를 적극적으로 사용한다.
 
+- primitive 타입의 arguments 에는 최대한 hint 를 사용한다.
+- arguments 에 넣는 변수 이름과 arguments 의 이름이 동일한 경우는 굳이 hint 를 쓸 필요는 없으나 써도 무방하다.
+
 ``` kotlin
 😰
-loginRepository.login(id, password) /** not recommended */
+loginRepository.checkSession(true, token) /** not recommended */
 
 😍
+loginRepository.checkSession(isLoggedIn = true, token = token) /** recommended */
+
+loginRepository.login(id, password) /** well.. it's fine */
+
 loginRepository.login( /** recommended */
     id       = id, 
     password = password
