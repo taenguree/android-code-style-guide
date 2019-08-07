@@ -87,6 +87,26 @@ private var shouldPlayAnimation = true /** 명사(Animation)를 동사(Play) 보
 private var shouldAnimationPlay = true
 ```
 
+### ✓ ~(값)을 가지고 있는가/존재하는가? 를 나타내는 boolean 에는 is 보다는 has 를 사용한다.
+
+``` kotlin 
+😰
+private var isUserIdExist = true
+
+private var checkUserIdExist = true
+
+if(loginData.whenUserIdExist()) {
+  ...
+}
+
+😍
+private var hasUserData = true
+
+if(loginData.hasUserId()) {
+  ...
+}
+```
+
 ## [ MVCH Rules ]
 
 ### ✓ 
