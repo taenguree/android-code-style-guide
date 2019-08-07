@@ -81,7 +81,7 @@ private var isPlayAnimation = true
 
 private var playAnimation = true
 
-private var shouldPlayAnimation = true // 명사를 먼저 쓰기를 권장
+private var shouldPlayAnimation = true // 명사(Animation)를 동사(Play) 보다 먼저 쓰기를 권장
 
 😍
 private var shouldAnimationPlay = true
