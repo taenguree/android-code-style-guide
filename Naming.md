@@ -71,6 +71,22 @@ private var shouldPlayAnimationOnInitialDraw = true
 
 ```
 
+### ✓ ~을 해야하는가? 를 나타내는 boolean 에는 is 보다는 should 를 사용한다.
+
+``` kotlin 
+😰
+private var isAnimationPlay = true
+
+private var isPlayAnimation = true
+
+private var playAnimation = true
+
+private var shouldPlayAnimation = true // 명사를 먼저 쓰기를 권장
+
+😍
+private var shouldAnimationPlay = true
+```
+
 ## [ MVCH Rules ]
 
 ### ✓ 
