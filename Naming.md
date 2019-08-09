@@ -28,7 +28,7 @@ private fun onUserDataFetched()
 
 ``` kotlin 
 😰
-private fun calculateTransitionY(focusTargetView: View): Float {} /** Not recommended */
+private fun calculateTransitionY(view: View): Float {} /** Not recommended */
 
 😍
 private fun calculateNodeTransitionDistanceOnFocus(focusTargetView: View): Float {} /** Recommended */
