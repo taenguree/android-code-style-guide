@@ -1,5 +1,41 @@
 # Naming
 
+## [ Basic Rules ]
+
+### ✓ 기본적으로 네이밍은 아래 룰을 따른다.
+
+- 명령/실행 -> {동사}{중요정보명사}{부사|기타} 순으로 작성한다.
+
+``` kotlin 
+😰
+private fun userDataFetch()
+
+😍
+private fun fetchUserData()
+```
+
+- 상황/이벤트 -> (on){중요정보명사}{동사}{부사|기타} 순으로 작성한다.
+
+``` kotlin 
+😰
+private fun onFetchUserData()
+
+😍
+private fun onUserDataFetched()
+```
+
+### ✓ 변수명/함수명은 평서문처럼 작성하고 동사/명사/접속사/전치사 등을 적극적으로 사용해 최대한 많은 의미를 담는다.
+
+``` kotlin 
+😰
+private fun calculateTransitionY(focusTargetView: View): Float /** Not recommended */
+
+😍
+private fun calculateNodeTransitionDistanceOnFocus(focusTargetView: View): Float /** Recommended */
+
+private fun calculateTransitionDistanceForNodeOnFocus(focusTargetView: View): Float /** Recommended */
+```
+
 ## [ Class/Interface Naming Rules ]
 
 ### ✓ 특정 기능을 하는 Interface 와 이를 상속받는 클래스가 있을 경우 아래와 같은 룰을 따른다.
@@ -68,7 +104,6 @@ private var isEssentialInformationEnteredCorrectly = true
 private var hasProblemInformation = true
 
 private var shouldPlayAnimationOnInitialDraw = true
-
 ```
 
 ### ✓ ~을 해야하는가? 를 나타내는 boolean 에는 is 보다는 should 를 사용한다.
