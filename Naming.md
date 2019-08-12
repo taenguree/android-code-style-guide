@@ -103,7 +103,7 @@ private var isEssentialInformationEnteredCorrectly = true
 
 private var hasProblemInformation = true
 
-private var shouldPlayAnimationOnInitialDraw = true
+private var shouldAnimationPlayOnInitialDraw = true
 ```
 
 ### ✓ ~을 해야하는가? 를 나타내는 boolean 에는 is 보다는 should 를 사용한다.
