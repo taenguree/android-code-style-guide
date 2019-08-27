@@ -29,7 +29,7 @@
           - → Indent : 4
           - → Countinuation intdent : 4
         - Other
-          - Spaces -> In empty tag 체크
+          - Spaces → In empty tag 체크
          
 ## file template setting
 
