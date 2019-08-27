@@ -23,7 +23,14 @@
           - → 'when' parentheses 체크 해제
         - Imports
           - → Insert imports for inner classes 체크 해제
-
+      - Xml
+        - Tab and Indents
+          - → Tab size : 4
+          - → Indent : 4
+          - → Countinuation intdent : 4
+        - Other
+          - Spaces -> In empty tag 체크
+         
 ## file template setting
 
 - 기본적으로 클래스, 리소스 파일을 생성 시 /** Created By ... */ 와 같이 자동 생성되는 문구들이 없도록 한다.
