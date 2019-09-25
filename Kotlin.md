@@ -352,5 +352,30 @@ loginRepository.login( /** recommended */
 ) 
 ```
 
+### ✓ 함수 코드내에서 하나의 의미있는 단위로 묶을 수 있는 코드는 함수로 다시 정의해 사용한다.
+
+- 필수는 아니며 권고사항.
+
+```
+😍
+fun bind() {
+  //...
+  
+  fun getProgressSpannableText(): SpannableString {
+      val solvedProblemCountLength = progressText.split("/").first().length
+
+      val spannableString = SpannableString(progressText)
+
+      spannableString.setSpan(ForegroundColorSpan(ContextCompat.getColor(context, R.color._4FC3F7)), 0, solvedProblemCountLength, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+
+      return spannableString
+  }
+
+  tv_solving_progress.text = getProgressSpannableText()
+  
+  //...
+}
+```
+
 
 
