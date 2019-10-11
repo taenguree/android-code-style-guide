@@ -157,7 +157,3 @@ private var products = listOf<Product>
 
 private var productList = listOf<Product>
 ```
-
-## [ MVCH Rules ]
-
-### ✓ 
