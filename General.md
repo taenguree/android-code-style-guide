@@ -271,7 +271,7 @@ lateinit var badAnnotating: String
 @Inject @field:Good lateinit var goodAnnotating: String
 ```
 
-### ✓ Builder 패턴의 코드를 부를 때에는 메소드를 세번이상 부를 때 LF 한다.
+### ✓ Builder 패턴의 코드를 부를 때에는 메소드를 세번이상 부를 때 CR 한다.
 
 ``` kotlin
 😰 
