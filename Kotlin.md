@@ -357,7 +357,7 @@ loginRepository.login( /** recommended */
 
 - 필수는 아니며 권고사항.
 
-```
+``` kotlin
 😍
 fun bind() {
   //...
