@@ -45,7 +45,7 @@ internal class CircledLayout constructor : ImageView(...)
 internal class CircledImageView constructor : ImageView(...)
 ```
 
-- custom 된 뷰가 xml 에서 쓰일 경우 id 는 custom_{최상위_부모뷰의 축약어}_{이름} 로 명명한다.
+- custom 된 뷰가 xml 에서 쓰일 경우 id 는 custom_{커스텀 뷰가 상속 받은 뷰의 축약어}_{이름} 로 명명한다.
     - 예)
         - android:id="@+id/"```custom_iv```_circled"
         - android:id="@+id/"```custom_fl```_road_map_cell"
