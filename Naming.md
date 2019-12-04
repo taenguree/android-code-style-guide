@@ -157,3 +157,59 @@ private var products = listOf<Product>
 
 private var productList = listOf<Product>
 ```
+
+### ✓ 특정 값을 읽을 때는 get, 쓸 때는 set 을 사용한다.
+
+- 네트웍이나, 룸, 메모리캐쉬 등에서 읽을 때는 fetch, 쓸 때는 publish 를 사용한다.
+
+``` kotlin 
+😰
+class User constructor(private val userName: String) {
+  
+    fun userName() = userName
+
+    fun userName(userName: String) {
+      this.userName = userName
+    }
+  
+}
+
+class Repository constructor(private val retrofit: Retrofit) {
+  
+    fun getUser() = retrofit.getUser()
+     
+    fun setUser(user: User) {
+      retrofit.setUser(user)
+    }
+     
+    fun deleteUser(user: User) {
+      retrofit.deletUser(user)    
+    }
+  
+}
+
+😍
+class User constructor(private val userName: String) {
+  
+    fun getUserName() = userName
+
+    fun setUserName(userName: String) {
+      this.userName = userName
+    }
+  
+}
+
+class Repository constructor(private val retrofit: Retrofit) {
+  
+    fun fetchUser() = retrofit.fetchUser()
+     
+    fun publishUser(user: User) {
+      retrofit.publishUser(user)
+    }
+     
+    fun publishDeleteUser(user: User) {
+      retrofit.publishDeleteUser(user)    
+    }
+  
+}
+```
