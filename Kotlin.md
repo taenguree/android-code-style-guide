@@ -203,6 +203,42 @@ internal sealed class LooknFeel {
 }
 ```
 
+### ✓ 데이터를 담는 클래스는 생성자 앞에 constructor 키워드를 붙이지 않고 기능을 하는 클래스의 생성자 앞에는 constructor 키워드를 붙인다.
+
+- 아무런 argument 가 없을 경우 constructor 키워드를 생략한다.
+
+``` kotlin
+😰
+internal class User constructor(val userName: String, val age: Int)
+
+internal class RemoteAction (private val retrofit: Retrofit) {
+
+  //...
+
+}
+
+internal class RemoteAction constructor() {
+
+  //...
+
+}
+
+😍
+internal class User (val userName: String, val age: Int)
+
+internal class RemoteAction constructor(private val retrofit: Retrofit) {
+
+  //...
+
+}
+
+internal class RemoteAction {
+
+  //...
+
+}
+```
+
 ### ✓ 빈 함수의 경우 Unit 을 리턴한다.
 
 ``` kotlin
@@ -233,28 +269,6 @@ internal class GoodEmptyclass
 - 하지만 이를 사용하지 않는다.
 - 그 이유에 대해서는 이곳에 서술하기엔 길어지므로 lead programmer 에게 문의
   - 간단하게 설명하자면 [기본적으로 안되게 하는 철학](https://github.com/taenguree/android-code-style-guide/blob/master/General.md#%EB%AD%90%EB%93%A0%EC%A7%80-%EC%9A%B0%EC%84%A0-%EC%95%88%EB%90%98%EA%B2%8C-%ED%95%98%EA%B3%A0-%EB%82%98%EC%A4%91%EC%97%90-%ED%95%84%EC%9A%94%ED%95%A0-%EB%95%8C-%EB%90%98%EA%B2%8C%ED%95%98%EB%9D%BC-)에 위배되기 때문이다.
-
-### ✓ 데이터를 담는 클래스는 생성자 앞에 constructor 키워드를 붙이지 않고 기능을 하는 클래스의 생성자 앞에는 constructor 키워드를 붙인다.
-
-``` kotlin
-😰
-internal class User constructor(val userName: String, val age: Int)
-
-internal class RemoteAction (private val retrofit: Retrofit) {
-
-  //...
-
-}
-
-😍
-internal class User (val userName: String, val age: Int)
-
-internal class RemoteAction constructor(private val retrofit: Retrofit) {
-
-  //...
-
-}
-```
 
 ### ✓ 변수명만으로 타입의 의미를 표현하기 힘든 경우 typealias 를 적극적으로 사용한다.
 
