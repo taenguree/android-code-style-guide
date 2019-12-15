@@ -153,11 +153,10 @@ class Good constructor(context: Context) : FrameLayout(context)
 
 - 상속/구현 라인과 생성자라인에 사이에 LF 한다.
   - 단 데이타를 담는 sealed class 안의 클래스들에는 LF 하지 않는다.
-- sealed class 가 아닌 다른 class 에는 생성자 앞에 constructor 키워드를 붙인다.
 
 ``` kotlin
 😰
-internal class BadClass ( /** constructor 키워드가 있어야 한다. */
+internal class BadClass constructor(
     private val context: Context,
     private val resources: Resource
 ) : FrameLayout(context) { /** 윗 라인에 공백라인을 추가한다. */
