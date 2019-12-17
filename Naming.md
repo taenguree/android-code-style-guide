@@ -14,7 +14,7 @@ private fun userDataFetch()
 private fun fetchUserData()
 ```
 
-- 상황/이벤트/콜백 -> (on){중요정보명사}{동사}{부사|기타} 순으로 작성한다.
+- 상황/이벤트/콜백 -> (on){중요정보명사}{동사(필요하다면 수동태)}{부사|기타} 순으로 작성한다.
 
 ``` kotlin 
 😰
