@@ -207,8 +207,8 @@ class Repository constructor(private val retrofit: Retrofit) {
       retrofit.publishUser(user)
     }
      
-    fun publishDeleteUser(user: User) {
-      retrofit.publishDeleteUser(user)    
+    fun publishUserDeletion(user: User) {
+      retrofit.publishUserDeletion(user)    
     }
   
 }
