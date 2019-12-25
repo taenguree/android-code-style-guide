@@ -164,7 +164,7 @@ private var productList = listOf<Product>
 
 ``` kotlin 
 😰
-class User constructor(private val userName: String) {
+internal class User constructor(private val userName: String) {
   
     fun userName() = userName
 
@@ -174,7 +174,7 @@ class User constructor(private val userName: String) {
   
 }
 
-class Repository constructor(private val retrofit: Retrofit) {
+internal class Repository constructor(private val retrofit: Retrofit) {
   
     fun getUser() = retrofit.getUser()
      
@@ -189,7 +189,7 @@ class Repository constructor(private val retrofit: Retrofit) {
 }
 
 😍
-class User constructor(private val userName: String) {
+internal class User constructor(private val userName: String) {
   
     fun getUserName() = userName
 
@@ -199,7 +199,7 @@ class User constructor(private val userName: String) {
   
 }
 
-class Repository constructor(private val retrofit: Retrofit) {
+internal class Repository constructor(private val retrofit: Retrofit) {
   
     fun fetchUser() = retrofit.fetchUser()
      
