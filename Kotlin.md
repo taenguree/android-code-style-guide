@@ -37,9 +37,9 @@ internal abstract class MyCustomLayout constructor(
 
 ) : FrameLayout(context, attrs) {
 
-  constructor(context: Context, attrs: AttributeSet? = null, extra: Int) : this(context, attrs, extra)
+//  constructor(context: Context, attrs: AttributeSet? = null, extra: Int) : super(context, attrs, extra)
   
-  constructor(context: Context, attrs: AttributeSet? = null, extra: Int, extra1: Int) : this(context, attrs, extra)
+//  constructor(context: Context, attrs: AttributeSet? = null, extra: Int, extra1: Int) : super(context, attrs, extra)
   
   companion object {
     private const val MAX_LAYOUT_WIDTH  = 100F
