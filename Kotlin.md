@@ -114,6 +114,7 @@ internal abstract class MyCustomLayout constructor(
   - onRestoreInstanceState, onSaveInstanceState 가 라이프사이클 관련된 함수이지만 클래스 하단에 나오게 된다.
   
 ``` kotlin
+😍
 internal class MyLayout constructor(
         context: Context,
         attrs: AttributeSet? = null
