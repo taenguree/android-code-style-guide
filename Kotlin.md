@@ -110,6 +110,101 @@ internal abstract class MyCustomLayout constructor(
 }
 ```
 
+- 안드로이드 View/Layout 과 관련된 클래스일 경우 복원 코드와 관련해서는 아래와 같은 예외가 있다.
+  - onRestoreInstanceState, onSaveInstanceState 가 라이프사이클 관련된 함수이지만 클래스 하단에 나오게 된다.
+  
+``` kotlin
+internal class MyLayout constructor(
+        context: Context,
+        attrs: AttributeSet? = null
+
+) : FrameLayout(context, attrs) {
+
+    interface Listener {
+        // TODO 외부로 응답 줄 콜백 함수 정의
+    }
+
+    @Parcelize
+    class LooknFeel : Parcelable
+
+    private var listener: Listener? = null
+
+    init {
+        LayoutInflater.from(context).inflate(R.layout.view_my, this, true)
+
+        initializeListener()
+    }
+    
+    fun setLooknFeel(looknFeel: LooknFeel) {
+        this.looknFeel = looknFeel
+        
+        // TODO 
+    }
+    
+    fun setListener(listener: Listener) {
+        this.listener = listener
+    }
+
+    private fun initializeListener() {
+        // TODO
+    }
+    
+    override fun onRestoreInstanceState(state: Parcelable?) {
+        if(state is SavedState) {
+            super.onRestoreInstanceState(state.superState)
+
+            looknFeel = state.looknFeel
+
+            looknFeel?.let(this::setLooknFeel)
+        } else {
+            super.onRestoreInstanceState(state)
+        }
+    }
+
+    override fun onSaveInstanceState(): Parcelable? {
+        val parcelable = super.onSaveInstanceState()
+
+        if(parcelable == null) {
+            return parcelable
+        }
+
+        return SavedState(parcelable).apply {
+            this.looknFeel = this@MyLayout.looknFeel
+        }
+    }
+    
+    private class SavedState : View.BaseSavedState {
+        companion object {
+            @JvmField
+            val CREATOR = object : Parcelable.Creator<SavedState> {
+                override fun createFromParcel(source: Parcel): SavedState {
+                    return SavedState(source)
+                }
+
+                override fun newArray(size: Int): Array<SavedState?> {
+                    return arrayOfNulls(size)
+                }
+            }
+        }
+
+        var looknFeel: LooknFeel? = null
+
+        constructor(superState: Parcelable) : super(superState)
+
+        private constructor(source: Parcel) : super(source) {
+            this.looknFeel = source.readParcelable(LooknFeel::class.java.classLoader)
+        }
+
+        override fun writeToParcel(out: Parcel, flags: Int) {
+            super.writeToParcel(out, flags)
+
+            out.writeParcelable(looknFeel, flags)
+        }
+    }
+
+}
+```
+
 ## [Basic rules]
 
 ### ✓ enum 은 대문자로 시작해 camel case 를 사용한다.
