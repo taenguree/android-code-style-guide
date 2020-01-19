@@ -161,8 +161,8 @@ private var productList = listOf<Product>
 ### ✓ 특정 값을 읽을 때는 get, 쓸 때는 set 을 사용한다.
 
 - 네트웍이나, 룸, 메모리캐쉬 등에서 읽을 때는 fetch, 쓸 때는 publish 를 사용한다.
-- 어떤 값을 얻어오는 함수가 idempotent 하면 get 이라고 이름 짓는다.
-- 어떤 값을 얻어오는 함수가 idempotent 하지 않으면 create 이라고 이름 짓는다.
+- 어떤 값을 얻어오는 함수의 리턴값이 idempotent 하면 get 이라고 이름 짓는다.
+- 어떤 값을 얻어오는 함수의 리턴값이 idempotent 하지 않으면 take 라고 이름 짓는다.
 
 ``` kotlin 
 😰
