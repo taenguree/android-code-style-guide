@@ -142,6 +142,8 @@ if(loginData.hasUserId()) {
 }
 ```
 
+### ✓ 0부터 시작하는 변수는 index/position (이)라는 변수명을 사용하고 1부터 시작하는 변수는 order/number/sequence 라는 변수명을 사용한다.
+
 ### ✓ Iterable 한 데이터의 변수에는 ~s, 혹은 ~List 와 같은 suffix 붙인다.
 
 - items 라는 변수는 최대한 지양하고 해당 데이터가 무엇인지를 나타내도록 적는다.
