@@ -360,8 +360,6 @@ if(problemType == NORMAL_PROBLEM_TYPE_PROVIDED_BY_SERVER) { /** good */
 }
 ```
 
-### ✓ 0부터 시작하는 변수는 index 라는 변수명을 사용하고 1부터 시작하는 변수는 order/number/sequence 라는 변수명을 사용한다.
-
 ### ✓ if 조건에 여러개(3개 이상)의 조건이 필요할 경우 아래와 같이 작성한다.
 
 ``` kotlin
