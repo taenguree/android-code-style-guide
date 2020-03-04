@@ -20,7 +20,6 @@
   - override
   - public
   - private
-- interface/class implementation members(if exist)
 
 ``` kotlin
 😍
@@ -100,12 +99,6 @@ internal abstract class MyCustomLayout constructor(
   private fun initilizeViews() {
     ...
   }
-  
-  private fun processMeasure() {
-    processMeasureRunnable.run()
-  }
-  
-  private val processMeasureRunnable = Runnable { ... }
 
 }
 ```
