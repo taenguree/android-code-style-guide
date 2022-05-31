@@ -411,13 +411,14 @@ private val alsoGoodRxOperatorStyle = observable
 ### ✓ 데이터를 담는 클래스에 기본값을 지향한다.
 
 - 다만 명확한 기본값으로 넣도록 한다.
+- Table like 정렬을 하지 않는다.
 
 ``` kotlin
 😍
 internal class NotRecommendedUserClass constructor(
-    private val id: String       = "",
+    private val id: String = "",
     private val password: String = "",
-            var type: UserType   = UserType.New()
+            var type: UserType = UserType.New()
 )
 ```
 
