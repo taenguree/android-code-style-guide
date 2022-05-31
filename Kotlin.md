@@ -386,7 +386,7 @@ private val goodVariable = hashMapOf<PictureIndex, PictureUrl>()
 private val badRxOperatorStyle = observable
   .filter { it == 1} /** 한 줄에 충분히 쓸 수 있을 만큼 많이 짧으므로 한 줄로 작성한다. */
 
-private val alsoBadRxOperatorStyle = observable.filter { /** operator 여러개일 경우 LF 해서 사용한다. */
+private val alsoBadRxOperatorStyle = observable.filter { /** operator 여러개일 경우 줄바꿈해서 사용한다. */
     it == 1
   }.map {
     it + SOME_VALUE
@@ -408,36 +408,17 @@ private val alsoGoodRxOperatorStyle = observable
   .map { it + SOME_VALUE }
 ```
 
-### ✓ 데이터를 담는 클래스에 기본값을 지양한다.
+### ✓ 데이터를 담는 클래스에 기본값을 지향한다.
 
-- 기본값을 무조건 쓰지 말라는 것은 아니고 최대한 지양한다.
-  - 기본값을 넣게되면 모든 멤버 변수들을 생성자에 넣는식으로 코딩이 되고 이는 잘못된 데이터 초기화와 잘못된 시점에서의 초기화를 야기한다.
-- 명확한 기본값이라면 넣어도 상관없다.
+- 다만 명확한 기본값으로 넣도록 한다.
 
 ``` kotlin
-😰
+😍
 internal class NotRecommendedUserClass constructor(
     private val id: String       = "",
     private val password: String = "",
             var type: UserType   = UserType.New()
 )
-
-😍
-internal class RecommendedUserClass constructor(
-    private val id: String,
-    private val password: String
-    
-) {
-
-  private lateinit var type: UserType
-  
-  fun setUserType(type: UserType) {
-    this.type = type
-  }
-  
-  fun getUserType() = type
-
-}
 ```
 
 ### ✓ arguments hint 를 적극적으로 사용한다.
