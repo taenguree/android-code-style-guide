@@ -12,6 +12,8 @@
           - → Tab size : 4
           - → Indent : 4
           - → Countinuation intdent : 4
+        - Wrapping and Braces
+          - → PropertyAnnotations : Do not wrap
         - Imports
           - → Insert imports for inner classes 체크 해제
       - Xml
