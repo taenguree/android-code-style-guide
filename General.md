@@ -295,9 +295,9 @@ if(badIfCondition && badIfCondition1 && badIfCondigion2) {
 }
 
 😍
-if(goodIfCondition &&
-    goodIfCondition1 && 
-    goodIfCondition2) {
+if(goodIfCondition
+    && goodIfCondition1 
+    && goodIfCondition2) {
   ...
 }
 ```
