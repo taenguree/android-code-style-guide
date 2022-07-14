@@ -2,19 +2,20 @@
 
 ## style xml import
 
-- [구글 스타일 가이드 레포지토리](https://github.com/google/styleguide)를 clone
-- 최상위 폴더에 있는 intellij-java-google-style.xml 파일을 안드로이드 스튜디오에 import 
-  - AndroidStudio -> Preference -> Editor -> Code style -> Scheme
-- 위 파일 import 후 아래와 같이 약간의 변경을 진행한다.
+- 설정 -> Editor -> Code Style -> Schema 를 "Project" 로 설정 후 아래 값 변경
   - Preferences
     - Code style
       - General
-        - → Hard wrap at 160 자로 설정
+        - → Hard wrap at 300 자로 설정(자동으로 코드가 내려가는 것을 방지하기 위해 최대한 멀리 위치 시킴)
       - Kotlin
         - Tabs and Indents
           - → Tab size : 4
           - → Indent : 4
-          - → Countinuation intdent : 8
+          - → Countinuation intdent : 4
+        - Blank lines
+          - Keep maximum blank lines
+            - → in declarations : 1
+            - → in code: 1
         - Imports
           - → Insert imports for inner classes 체크 해제
       - Xml
@@ -22,8 +23,6 @@
           - → Tab size : 4
           - → Indent : 4
           - → Countinuation intdent : 4
-        - Other
-          - Spaces → In empty tag 체크
          
 ## file template setting
 
@@ -65,8 +64,3 @@
           internal interface ${NAME} {
           }
           ```
-
-## extra setting
-
-- parameter name hint 를 disable 한다.
-  - AndroidStudio -> Preference -> Editor -> General -> Appearance -> 'show parameter name hints' 체크해제
