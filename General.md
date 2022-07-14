@@ -29,7 +29,7 @@ internal class GoodClass
 - 하지만 아래와 같은 예외는 있다.
   - 테스트 코드의 실제 테스트 함수명은 snake case 로 사용한다.
   - 테스트 코드는 한글로 작성가능하다.
-  - 한글로 작성 시 웬만하면 Given, When, Then 포맷을 따르도록 한.
+  - 한글로 작성 시 웬만하면 Given, When, Then 포맷을 따르도록 한다.
     ``` kotlin
     fun this_function_return_true() { ... }
     
