@@ -224,8 +224,7 @@ class Good constructor(context: Context) : FrameLayout(context)
 
 ### ✓ 생성자는 아래와 같이 작성한다.
 
-- 상속/구현 라인과 생성자라인에 사이에 LF 한다.
-  - 단 데이타를 담는 sealed class 안의 클래스들에는 LF 하지 않는다.
+- 클래스에 구현(필드 및 함수 등)이 있을 경우(Brace 가 있을 경우) 상속/구현 라인과 생성자라인에 사이에 LF 한다.
 
 ``` kotlin
 😰
@@ -240,6 +239,12 @@ internal class BadClass constructor(
   
 }
 
+internal class BadClass constructor(
+    private val context: Context,
+    private val resources: Resource
+// <-- 이 클래스는 데이터만 들고 있고 구현이나 기능이 없으므로 여기 공백 라인을 추가하지 않는다.
+)
+
 😍
 internal class GoodClass constructor(
     private val context: Context,
@@ -253,18 +258,11 @@ internal class GoodClass constructor(
   
 }
 
-😰
-internal sealed class LooknFeel {
-  class TopBar(
-    val userName: String,
-    val age: Int,
-                                                // <-- 여기에 LF 하지 않는다.
-  ) : LooknFeel()
-  
-  class BottomBar : LooknFeel()
-}
+internal class GoodClass constructor(
+    private val context: Context,
+    private val resources: Resource
+)
 
-😍
 internal sealed class LooknFeel {
   class TopBar(
     val userName: String,
