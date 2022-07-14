@@ -201,22 +201,6 @@ internal class MyLayout constructor(
 
 ## [Basic rules]
 
-### ✓ enum 은 대문자로 시작해 camel case 를 사용한다.
-
-``` kotlin
-😰
-enum BadEnum {
-  BAD_ENUM,
-  alsoBadEnum
-}
-
-😍
-enum GoodEnum {
-  GoodEnum,
-  AlsoGoodEnum
-}
-```
-
 ### ✓ Colon(:) 은 아래의 룰에 따른다.
 
 - 리턴 값을 의미할 경우 suffix space 만 넣고 prefix space 는 넣지 않는다.
