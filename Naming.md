@@ -15,13 +15,18 @@ private fun fetchUserData()
 ```
 
 - 상황/이벤트/콜백 -> (on){중요정보명사}{동사(필요하다면 수동태)}{부사|기타} 순으로 작성한다.
+  - 유저의 인터렉션으로 발생한 경우에는 앞에 on 을 붙이고 나머지는 붙이지 않는다.
 
 ``` kotlin 
 😰
-private fun onFetchUserData()
+private fun fetchUserData()
+
+private fun buttonClicked()
 
 😍
-private fun onUserDataFetched()
+private fun userDataFetched()
+
+private fun onButtonClicked()
 ```
 
 ### ✓ 변수명/함수명은 평서문처럼 작성하고 동사/명사/접속사/전치사 등을 적극적으로 사용해 최대한 많은 의미를 담는다.
