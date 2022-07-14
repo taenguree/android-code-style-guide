@@ -28,9 +28,12 @@ internal class GoodClass
 - 기본적으로 Camel case 를 사용한다.
 - 하지만 아래와 같은 예외는 있다.
   - 테스트 코드의 실제 테스트 함수명은 snake case 로 사용한다.
-  - ~테스트 코드는 한글로 작성할까 고려 중..~
+  - 테스트 코드는 한글로 작성가능하다.
+  - 한글로 작성 시 웬만하면 Given, When, Then 포맷을 따르도록 한.
     ``` kotlin
     fun this_function_return_true() { ... }
+    
+    fun `Given username 이 null, When 화면에 진입 시, Then 데이터를 fetch 해와 username 값이 null 이 아니게된다.`() { ... }
     ```
   - 테스트 코드 중 setUp 과 tearDown 함수는 Camel case 를 사용한다.
     ``` kotlin
